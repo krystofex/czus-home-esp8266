@@ -1,0 +1,4 @@
+#define SSID        "SSID"
+#define PASSWORD    "*****"
+
+#define DEVICE_NAME "esp1"
