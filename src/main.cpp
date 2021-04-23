@@ -112,7 +112,7 @@ void setup()
   wifi.setup();
   webServer.setup();
   sensor.setup();
-  doc["macAdress"] = WiFi.macAddress();
+  doc["macAddress"] = WiFi.macAddress();
 }
 
 void loop()
