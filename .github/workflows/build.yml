@@ -23,9 +23,11 @@ jobs:
         key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
     - name: Set up Python
       uses: actions/setup-python@v2
+    - name: configuration file
+      run: cp include/Configuration.h.example include/Configuration.h
     - name: Install PlatformIO
       run: |
         python -m pip install --upgrade pip
         pip install --upgrade platformio
     - name: Run PlatformIO
-      run: pio run -e <ID_1> -e <ID_2> -e <ID_N>
+      run: pio run
