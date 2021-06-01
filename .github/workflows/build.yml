@@ -9,8 +9,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-     - name: create configuration file
-      run: cp include/Configuration.h.example include/Configuration.h
     - name: Cache pip
       uses: actions/cache@v2
       with:
